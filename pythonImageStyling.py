@@ -11,7 +11,7 @@ def load_image(image_path, image_size=(512, 256)):
     return img 
                              
 def visualize(images, titles=('',)):
-    noi = len(images) //number of images
+    noi = len(images) #number of images
     image_sizes = [image.shape[1] for image in images]
     w = (image_sizes[0] * 6) // 320
     plt.figure(figsize=(w  * noi, w))
